@@ -1,0 +1,120 @@
+/* ── Reset & base ──────────────────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1a1a1a;
+
+  /* Tiled background */
+  background-image: url('../images/Tsinghua_Tan_Purity_Background.png');
+  background-repeat: repeat;
+  /* background-size: 150px; ← uncomment and adjust to scale the tile */
+  background-color: #fbebc4; /* fallback while image loads */
+}
+
+/* ── Layout ────────────────────────────────────────────────────────────────── */
+
+/* Single centred column that stays readable on both desktop and mobile */
+header,
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+}
+
+/* ── Header ────────────────────────────────────────────────────────────────── */
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── Instructions ──────────────────────────────────────────────────────────── */
+
+.instructions {
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+/* ── Question list ─────────────────────────────────────────────────────────── */
+
+#question-list {
+  list-style: none;         /* numbers come from the id in the data, not CSS */
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+#question-list li {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* 44px min-height satisfies Apple's tap-target guideline on mobile */
+#question-list label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 44px;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+
+#question-list input[type="checkbox"] {
+  /* Prevent the checkbox from shrinking on small screens */
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  accent-color: #7b2d8b; /* Tsinghua purple — change to brand colour as needed */
+  cursor: pointer;
+}
+
+/* Strike-through checked items for quick visual feedback */
+#question-list input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.error {
+  color: #c0392b;
+}
+
+/* ── Submit button ─────────────────────────────────────────────────────────── */
+
+#submit-btn {
+  display: block;
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #7b2d8b;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+#submit-btn:hover {
+  background: #6a2578;
+}
+
+/* ── Score panel ───────────────────────────────────────────────────────────── */
+
+#score-panel {
+  padding: 1rem;
+  background: #fff;
+  border: 2px solid #7b2d8b;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Required for correct scaling on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THU Purity Test</title>
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="images/Tsinghua_Purity_Test_Header.png" alt="Tsinghua Purity Test" />
+  </header>
+
+  <main>
+    <!-- Instructions shown above the question list -->
+    <p class="instructions">
+      Check every item you have done. Your score is the number of boxes
+      <em>left unchecked</em>.
+    </p>
+
+    <!-- Questions are injected here by main.js -->
+    <form id="question-form">
+      <ol id="question-list">
+        <!-- <li> elements rendered by JS -->
+      </ol>
+    </form>
+
+    <!-- Score panel — hidden until the user submits -->
+    <div id="score-panel" hidden>
+      <p>Your purity score is <strong id="score-value"></strong> / <span id="score-total"></span>.</p>
+    </div>
+
+    <button id="submit-btn" type="button">Calculate my score</button>
+  </main>
+
+  <script src="src/main.js"></script>
+</body>
+</html>
