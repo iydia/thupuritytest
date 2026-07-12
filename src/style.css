@@ -2,7 +2,7 @@
 
 :root {
   --black:           #1a1a1a;
-  --text-grey:     #888;
+  --checked-purple-grey:     #766a77;
   --text-white:     #efe5f0;
   --color-bg-fallback:    #fbebc4;
   --dusty-purple:         #4a3f52;
@@ -133,7 +133,7 @@ header img {
 }
 
 #question-list input[type="checkbox"]:checked + span {
-  color: var(--text-grey);
+  color: var(--checked-purple-grey);
 }
 
 .error {
