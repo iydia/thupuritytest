@@ -1,3 +1,18 @@
+/* ── Colours ────────────────────────────────────────────────────────────────── */
+
+:root {
+  --black:           #1a1a1a;
+  --text-grey:     #888;
+  --text-white:     #efe5f0;
+  --color-bg-fallback:    #fbebc4;
+  --dusty-purple:         #4a3f52;
+  --tsinghua-original-purple:  #7b2d8b;
+  --tsinghua-purple-hover:   #5d2269;
+  --color-border:         #e0e0e0;
+  --color-error:          #c0392b;
+  --white:          #fff;
+}
+
 /* ── Reset & base ──────────────────────────────────────────────────────────── */
 
 *,
@@ -12,13 +27,13 @@ body {
   font-family: 'Times New Roman', Times, serif;
   font-size: 1rem;
   line-height: 1.6;
-  color: #1a1a1a;
+  color: var(--black);
 
   /* Tiled background */
   background-image: url('../images/Tsinghua_Tan_Purity_Background.png');
   background-repeat: repeat;
   background-size: 225px; /* adjust to scale the background repeated tile */
-  background-color: #fbebc4; /* fallback while image loads */
+  background-color: var(--color-bg-fallback); /* fallback while image loads */
 }
 
 /* ── Layout ────────────────────────────────────────────────────────────────── */
@@ -48,7 +63,7 @@ header img {
   text-underline-offset: 3px;
   cursor: help;
   position: relative;
-  color: #4a3f52;
+  color: var(--dusty-purple);
 }
 
 .tooltip-box {
@@ -57,8 +72,8 @@ header img {
   bottom: 125%;
   left: 50%;
   transform: translateX(-50%);
-  background: #4a3f52;
-  color: #fff;
+  background: var(--dusty-purple);
+  color: var(--white);
   padding: 0.4rem 0.6rem;
   border-radius: 4px;
   font-size: 0.85rem;
@@ -95,7 +110,7 @@ header img {
 }
 
 #question-list li {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--color-border);
 }
 
 /* 44px min-height satisfies Apple's tap-target guideline on mobile */
@@ -113,16 +128,16 @@ header img {
   flex-shrink: 0;
   width: 1.25rem;
   height: 1.25rem;
-  accent-color: #7b2d8b; /* Tsinghua purple — change to brand colour as needed */
+  accent-color: var(--tsinghua-original-purple);
   cursor: pointer;
 }
 
 #question-list input[type="checkbox"]:checked + span {
-  color: #888;
+  color: var(--text-grey);
 }
 
 .error {
-  color: #c0392b;
+  color: var(--color-error);
 }
 
 /* ── Submit button ─────────────────────────────────────────────────────────── */
@@ -134,8 +149,8 @@ header img {
   margin: 0 auto;
   font-size: 1rem;
   font-weight: 600;
-  color: #efe5f0;
-  background: #7b2d8b;
+  color: var(--text-white);
+  background: var(--tsinghua-original-purple);
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -143,15 +158,15 @@ header img {
 }
 
 #submit-btn:hover {
-  background: #5d2269;
+  background: var(--tsinghua-purple-hover);
 }
 
 /* ── Score panel ───────────────────────────────────────────────────────────── */
 
 #score-panel {
   padding: 1rem;
-  background: #fff;
-  border: 2px solid #7b2d8b;
+  background: var(--white);
+  border: 2px solid var(--tsinghua-original-purple);
   border-radius: 6px;
   text-align: center;
   font-size: 1.2rem;
