@@ -35,7 +35,9 @@ main {
 
 header img {
   width: 100%;
-  height: auto;
+  height: 225px;
+  object-fit: cover;
+  object-position: center top;
   display: block;
 }
 
