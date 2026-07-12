@@ -161,6 +161,27 @@ header img {
   background: var(--tsinghua-purple-hover);
 }
 
+/* ── Inline links ───────────────────────────────────────────────────────────── */
+
+.confession-link {
+  color: var(--dusty-purple);
+}
+
+/* ── Footer ────────────────────────────────────────────────────────────────── */
+
+footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 2rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--checked-purple-grey);
+}
+
+footer a {
+  color: var(--checked-purple-grey);
+}
+
 /* ── Score panel ───────────────────────────────────────────────────────────── */
 
 #score-panel {
