@@ -130,12 +130,13 @@ header img {
 
 #submit-btn {
   display: block;
-  width: 100%;
-  padding: 0.85rem;
+  width: auto;
+  padding: 0.85rem 2rem;
+  margin: 0 auto;
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
-  background: #7b2d8b;
+  background: #4a3f52;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -143,7 +144,7 @@ header img {
 }
 
 #submit-btn:hover {
-  background: #6a2578;
+  background: #7b2d8b;
 }
 
 /* ── Score panel ───────────────────────────────────────────────────────────── */
