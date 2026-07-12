@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <!-- Required for correct scaling on mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>THU Purity Test</title>
+  <title>THU Purity Test — Your Score</title>
   <link rel="stylesheet" href="src/style.css" />
   <link rel="icon" type="image/png" href="images/made_in_china_red.png" />
 </head>
@@ -26,20 +25,27 @@
   </header>
 
   <main>
-    <!-- Questions are injected here by main.js -->
-    <form id="question-form">
-      <ol id="question-list">
-        <!-- <li> elements rendered by JS -->
-      </ol>
-    </form>
-
-    <button id="submit-btn" type="button">Submit the Gaokao!</button>
+    <div id="score-panel">
+      <p>Your purity score is <strong id="score-value"></strong> / <span id="score-total"></span>.</p>
+    </div>
+    <a href="index.html" id="retake-btn">Retake the test</a>
   </main>
-
-  <script src="src/main.js"></script>
 
   <footer>
     <p>This project is open source — code at <a href="https://github.com/iydia/THU-Purity-Test">github.com/iydia/THU-Purity-Test</a>. Made by <a href="https://instagram.com/lydmaxxing">@lydmaxxing</a>.</p>
   </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const score = params.get("score");
+    const total = params.get("total");
+
+    if (score === null || total === null) {
+      window.location.href = "index.html";
+    } else {
+      document.getElementById("score-value").textContent = score;
+      document.getElementById("score-total").textContent = total;
+    }
+  </script>
 </body>
 </html>

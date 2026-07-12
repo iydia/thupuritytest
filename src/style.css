@@ -182,7 +182,7 @@ footer a {
   color: var(--checked-purple-grey);
 }
 
-/* ── Score panel ───────────────────────────────────────────────────────────── */
+/* ── Score page ─────────────────────────────────────────────────────────────── */
 
 #score-panel {
   padding: 1rem;
@@ -192,4 +192,24 @@ footer a {
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
+}
+
+#retake-btn {
+  display: block;
+  width: auto;
+  padding: 0.85rem 2rem;
+  margin: 0 auto 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-white);
+  background: var(--tsinghua-original-purple);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+#retake-btn:hover {
+  background: var(--tsinghua-purple-hover);
 }

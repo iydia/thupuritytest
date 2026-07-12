@@ -14,9 +14,6 @@ async function loadQuestions() {
   const questions = await res.json();
 
   const list = document.getElementById("question-list");
-  const totalEl = document.getElementById("score-total");
-
-  totalEl.textContent = questions.length;
 
   list.innerHTML = questions
     .map(
@@ -42,11 +39,7 @@ function calculateScore() {
   const checked = document.querySelectorAll('input[name="q"]:checked').length;
   const score = all.length - checked;
 
-  document.getElementById("score-value").textContent = score;
-  document.getElementById("score-panel").hidden = false;
-
-  // Scroll the score into view on mobile where it may be off-screen
-  document.getElementById("score-panel").scrollIntoView({ behavior: "smooth" });
+  window.location.href = `score.html?score=${score}&total=${all.length}`;
 }
 
 // ── Bootstrap ─────────────────────────────────────────────────────────────────
