@@ -39,11 +39,20 @@ header img {
   display: block;
 }
 
-/* ── Instructions ──────────────────────────────────────────────────────────── */
+.description {
+  text-align: center;
+  font-style: italic;
+}
+
+.warning {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+}
 
 .instructions {
-  margin-bottom: 1.5rem;
-  color: #444;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 /* ── Question list ─────────────────────────────────────────────────────────── */
