@@ -17,7 +17,7 @@ body {
   /* Tiled background */
   background-image: url('../images/Tsinghua_Tan_Purity_Background.png');
   background-repeat: repeat;
-  background-size: 100px; /* adjust to scale the background repeated tile */
+  background-size: 150px; /* adjust to scale the background repeated tile */
   background-color: #fbebc4; /* fallback while image loads */
 }
 
@@ -35,7 +35,7 @@ main {
 
 header img {
   width: 100%;
-  height: 167px;
+  height: 200px;
   object-fit: cover;
   object-position: center;
   display: block;
