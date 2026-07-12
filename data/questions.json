@@ -1,5 +1,5 @@
 [
-  { "id": 1, "text": "Slept over at C Building?" },
+  { "id": 1, "text": "Slept overnight at <span class=\"tooltip\">C楼<span class=\"tooltip-box\">C Building, Zijing Student Service Center</span></span>?" },
   { "id": 2, "text": "Stolen someone's bike?" },
   { "id": 3, "text": "Went to 天猫 more than 3 times in a day?" },
   { "id": 4, "text": "Went to 天猫 more than 4 times in a day?" },

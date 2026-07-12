@@ -45,6 +45,7 @@ header img {
 
 .tooltip {
   text-decoration: underline;
+  text-underline-offset: 3px;
   cursor: help;
   position: relative;
   color: #4a3f52;
@@ -116,9 +117,7 @@ header img {
   cursor: pointer;
 }
 
-/* Strike-through checked items for quick visual feedback */
 #question-list input[type="checkbox"]:checked + span {
-  text-decoration: line-through;
   color: #888;
 }
 
