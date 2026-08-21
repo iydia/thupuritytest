@@ -1,9 +1,9 @@
 [
   {"id": 1, "text": "Smoked a Chinese cigarette?"},
-  {"id": 2, "text": "Slept overnight at <span class=\"tooltip\">C楼<span class=\"tooltip-box\">C Building, Zijing Student Service Center</span></span>?"},
-  {"id": 3, "text": "Forgotten toilet paper and had no way to wipe your ass?"},
-  {"id": 4, "text": "Went to <span class=\"tooltip\">天猫<span class=\"tooltip-box\">T-Mall, a supermarket</span></span> more than 3 times in a day?"},
-  {"id": 5, "text": "Poisoned your roommate's shampoo with Thallium?"},
+  {"id": 2, "text": "Poisoned your roommate's shampoo with Thallium?"},
+  {"id": 3, "text": "Slept overnight at <span class=\"tooltip\">C楼<span class=\"tooltip-box\">C Building, Zijing Student Service Center</span></span>?"},
+  {"id": 4, "text": "Forgotten toilet paper and had no way to wipe your ass?"},
+  {"id": 5, "text": "Went to <span class=\"tooltip\">天猫<span class=\"tooltip-box\">T-Mall, a supermarket</span></span> more than 3 times in a day?"},
   {"id": 6, "text": "Dated an international student?"},
   {"id": 7, "text": "Dated a local student?"},
   {"id": 8, "text": "Hooked up with an international student?"},
