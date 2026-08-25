@@ -51,6 +51,10 @@ def main():
 
     for i, q in enumerate(questions, 1):
         q["id"] = i
+        
+        # Remove old question number, then add the new one
+        text = re.sub(r"^\d+\.\s*", "", q["text"])
+        q["text"] = f"{i}. {text}"
 
     lines = ["[\n"]
     for i, q in enumerate(questions):
