@@ -186,6 +186,10 @@ footer a {
   margin-bottom: 1.5rem;
 }
 
+#score-value {
+  color: var(--color-error);
+}
+
 #retake-btn {
   display: block;
   width: fit-content;
