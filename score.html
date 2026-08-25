@@ -27,6 +27,7 @@
   <main>
     <div id="score-panel">
       <p>You scored <strong id="score-value"></strong>%</span> on the Gaokao...</p>
+      <p id="score-message"></p>
     </div>
     <a href="index.html" id="retake-btn">Retake the test</a>
   </main>
@@ -37,15 +38,35 @@
 
   <script>
     const params = new URLSearchParams(window.location.search);
-    const score = params.get("score");
-    const total = params.get("total");
+    const score = Number(params.get("score"));
+    const total = Number(params.get("total"));
 
-    if (score === null || total === null) {
-      window.location.href = "index.html";
+    let message;
+
+    if (score < 10) {
+      message = "You're one of those nepo babies who lived their whole life on campus, aren't you?";
+    } else if (score < 20) {
+      message = "You've been on campus way too long, hurry up and graduate.";
+    } else if (score < 30) {
+      message = "You're starting to get a bit too comfortable with campus life.";
+    } else if (score < 40) {
+      message = "Time to quit smoking.";
+    } else if (score < 50) {
+      message = "Time to quit alcohol.";
+    } else if (score < 60) {
+      message = "A pass is a pass.";
+    } else if (score < 70) {
+      message = "Jay Ma would be proud.";
+    } else if (score < 80) {
+      message = "Seems like you're missing a few addictions. Get worse next time.";
+    } else if (score < 90) {
+      message = "Are you even Chinese?";
     } else {
-      document.getElementById("score-value").textContent = score;
-      document.getElementById("score-total").textContent = total;
+      message = "Do you even go here?";
     }
+
+    document.getElementById("score-value").textContent = score;
+    document.getElementById("score-message").textContent = message;
   </script>
 </body>
 </html>

@@ -190,6 +190,12 @@ footer a {
   color: var(--color-error);
 }
 
+#score-message {
+  font-size: 1.15rem;
+  padding: 0.85rem 2rem;
+  color: var(--checked-purple-grey);
+}
+
 #retake-btn {
   display: block;
   width: fit-content;
