@@ -3,8 +3,9 @@
 The **Tsinghua Purity Test** serves as a way for international students to assess their alignment with the stereotypical behaviours of international students at Tsinghua University.
 It's a voluntary opportunity to reflect on student life and appreciate the peculiarities of studying abroad in Beijing, China.
 
+Check it out: [thupurity.lol](thupurity.lol)
 
-[Submit the Gaokao here!](https://iydia.github.io/thupuritytest/).
+(If the above domain has expired, you can always access the test [here](https://iydia.github.io/thupuritytest/)). 
 
 ## Inspiration
 
